@@ -1,0 +1,135 @@
+#cart-hero {
+    background: url(../img/banner/b4.jpg);
+    /* background-position: top 5% right 10%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 45vh;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10%;
+}
+
+#cart-hero h2 {
+    color: white;
+    line-height: 70px;
+}
+
+#cart-hero p {
+    color: white;
+    font-size: 18px;
+    margin: 0px 0 20px 0;
+}
+
+#cart-section table {
+    border-collapse: collapse;
+
+    width: 100%;
+    margin-top: 50px;
+}
+
+#cart-section table thead {
+    border-top: 1px solid #838383;
+    border-bottom: 1px solid #838383;
+
+    padding: 15px 5px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#cart-section table thead tr td {
+    padding: 10px 5px;
+}
+
+#cart-section table tbody {
+    text-align: center;
+}
+
+#cart-section table tbody tr td a {
+    width: 20%;
+    margin: auto;
+    text-decoration: none;
+    color: #000;
+    /* background: #000; */
+}
+
+#cart-section table tbody td a img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+
+    display: block;
+    margin: 12px auto;
+}
+
+#cart-section table tbody tr td input {
+    width: 45px;
+    padding: 7px 5px;
+
+    outline: none;
+}
+
+#coupon-total {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#coupon-total .coupon-section {
+    width: 50%;
+}
+
+#coupon-total .coupon-section h3,
+#coupon-total .total-section h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#coupon-total .coupon-section input {
+    padding: 10px 5px;
+    width: 50%;
+    margin-right: 5px;
+
+    outline: none;
+}
+
+#coupon-total .coupon-section button,
+#coupon-total .total-section button {
+    padding: 10px;
+    background: #088178;
+    color: white;
+    border-radius: 4px;
+
+    font-weight: 600;
+}
+
+#coupon-total .total-section button {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+#coupon-total .total-section {
+    width: 50%;
+    border: 1px solid #bcbabd;
+    padding: 30px;
+    position: relative;
+
+    padding-bottom: 50px;
+}
+
+#coupon-total .total-section table {
+    border-collapse: collapse;
+    border: 1px solid #bcbabd;
+
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#coupon-total .total-section table tbody tr td {
+    padding: 10px;
+}

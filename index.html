@@ -1,1 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kishha | Leading Ecommerce Platform</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha384-wvfXpqpZZVj+k16s+X8CAOVq3rjcA5ScE3PLxv3FXdIcRqGJZwG3i6UZzI" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav id="navigation">
+            <a href="./index.html" class="logo">
+                <img src="./assets/img/logo.png" alt="" class="">
+            </a>
+            <ul id="nav-menu">
+                <i class="close-button far fa-times" id="close-button"></i>
+                <li><a class="active" href="./index.html">Home</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li>
+                    <a href="./cart.html" class="cart-menu">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                        <span class="cart-quantity">0</span>
+                    </a>
+                </li>
+            </ul>
+            <div id="mobile-menu">
+                <a href="./cart.html" class="cart-menu">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                    <span class="cart-quantity">0</span>
+                </a>
+                <i class="fas fa-outdent" id="menu-button" aria-hidden="true"></i>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="hero">
+            <p>Trade-in-offer</p>
+            <h2>Super value deals</h2>
+            <h1>On all products</h1>
+            <p>Save more on coupons & upto 70% off!</p>
+            <button onclick="window.location.href='shop.html';">Shop Now</button>
+        </section>
+    </header>
+
+    <main>
+        <!-- Features -->
+        <section id="features" class="section-p1">
+            <div class="features-box">
+                <img src="./assets/img/features/f1.png" alt="shipping-image">
+                <h6>Free Shipping</h6>
+            </div>
+            <div class="features-box">
+                <img src="./assets/img/features/f2.png" alt="shipping-image">
+                <h6>Online Order</h6>
+            </div>
+            <div class="features-box">
+                <img src="./assets/img/features/f3.png" alt="shipping-image">
+                <h6>Save Money</h6>
+            </div>
+            <div class="features-box">
+                <img src="./assets/img/features/f4.png" alt="shipping-image">
+                <h6>Promotion</h6>
+            </div>
+            <div class="features-box">
+                <img src="./assets/img/features/f5.png" alt="shipping-image">
+                <h6>Happy Sell</h6>
+            </div>
+            <div class="features-box">
+                <img src="./assets/img/features/f6.png" alt="shipping-image">
+                <h6>24/7 Support</h6>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section id="featured-products" class="section-p1">
+            <h2>Featured Products</h2>
+            <p>Summer Collection New Modern Design</p>
+            <section class="products-container">
+                <div class="product" onclick="window.location.href='product.html';">
+                    <div class="img-con">
+                        <img src="./assets/img/products/f1.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <span>adidas</span>
+                        <h5>Cartoon Astrounout Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="flex-center">
+                            <h4>$78</h4>
+                            <a onclick="addToCart(this)"><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-con">
+                        <img src="./assets/img/products/f2.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <span>adidas</span>
+                        <h5>Green Leaves Design Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="flex-center">
+                            <h4>$78</h4>
+                            <a onclick="addToCart(this)"><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-con">
+                        <img src="./assets/img/products/f3.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <span>adidas</span>
+                        <h5>Red Flowers Design Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="flex-center">
+                            <h4>$78</h4>
+                            <a onclick="addToCart(this)"><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-con">
+                        <img src="./assets/img/products/f4.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <span>adidas</span>
+                        <h5>Pink Flowers Floral Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="flex-center">
+                            <h4>$78</h4>
+                            <a onclick="addToCart(this)"><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-con">
+                        <img src="./assets/img/products/f5.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <span>adidas</span>
+                        <h5>Cartoon Astrounout Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="flex-center">
+                            <h4>$78</h4>
+                            <a onclick="addToCart(this)"><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-con">
+                        <img src="./assets/img/products/f6.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <span>adidas</span>
+                        <h5>Cartoon Astrounout Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="flex-center">
+                            <h4>$78</h4>
+                            <a onclick="addToCart(this)"><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-con">
+                        <img src="./assets/img/products/f7.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <span>adidas</span>
+                        <h5>Cartoon Astrounout Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="flex-center">
+                            <h4>$78</h4>
+                            <a onclick="addToCart(this)"><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-con">
+                        <img src="./assets/img/products/f8.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <span>adidas</span>
+                        <h5>Cartoon Astrounout Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="flex-center">
+                            <h4>$78</h4>
+                            <a onclick="addToCart(this)"><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Banner -->
+        <section id="banner" class="section-m1">
+            <h4>Repair Services</h4>
+            <h3>Upto <span>70% Off</span> - All T-Shirts & Accessories</h3>
+            <button class="normal">Explore More</button>
+        </section>
+
+        <!-- New Arrivals Products -->
+        <section id="featured-products" class="section-p1">
+            <h2>New Arrivals</h2>
+            <p>Summer Collection New Modern Design</p>
+            <section class="products-container">
+                <div class="product">
+                    <div class="img-con">
+                        <img src="./assets/img/products/n1.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <span>adidas</span>
+                        <h5>Skyblue Solid Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="flex-center">
+                            <h4>$78</h4>
+                            <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-con">
+                        <img src="./assets/img/products/n2.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <span>adidas</span>
+                        <h5>Gray Net Desginer Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="flex-center">
+                            <h4>$78</h4>
+                            <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-con">
+                        <img src="./assets/img/products/n3.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <span>adidas</span>
+                        <h5>White Solid Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="flex-center">
+                            <h4>$78</h4>
+                            <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-con">
+                        <img src="./assets/img/products/n4.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <span>adidas</span>
+                        <h5>Miltary Floral Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="flex-center">
+                            <h4>$78</h4>
+                            <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-con">
+                        <img src="./assets/img/products/n5.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <span>adidas</span>
+                        <h5>Denim Blue Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="flex-center">
+                            <h4>$78</h4>
+                            <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-con">
+                        <img src="./assets/img/products/n6.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <span>adidas</span>
+                        <h5>Solid Gray Shorts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="flex-center">
+                            <h4>$78</h4>
+                            <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-con">
+                        <img src="./assets/img/products/n7.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <span>adidas</span>
+                        <h5>Beige Double Pocket Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="flex-center">
+                            <h4>$78</h4>
+                            <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-con">
+                        <img src="./assets/img/products/n8.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <span>adidas</span>
+                        <h5>Black Solid Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="flex-center">
+                            <h4>$78</h4>
+                            <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Sell banner -->
+        <section class="section-p1">
+            <div id="sellBanner-container">
+                <div class="banner">
+                    <h4>crazy deals</h4>
+                    <h3>buy 1 get 1 free</h3>
+                    <span>The best classic dress is on sale at cora</span>
+                    <button class="white">Learn More</button>
+                </div>
+                <div class="banner banner-2">
+                    <h4>spring/summer</h4>
+                    <h3>upcoming season</h3>
+                    <span>The best classic dress is on sale at cora</span>
+                    <button class="white">Collection</button>
+                </div>
+            </div>
+            <div id="sellBanner-container-2">
+                <div class="banner banner-3">
+                    <h3>seasonal sale</h3>
+                    <span>Winter Collection 80% Off</span>
+                </div>
+                <div class="banner banner-4">
+                    <h3>new footwear collection</h3>
+                    <span>Spring / Summer 2023</span>
+                </div>
+                <div class="banner banner-5">
+                    <h3>t-shirts</h3>
+                    <span>New Trendy Prints</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section id="newsletter" class="section-p1 section-m1">
+            <div class="newsletter-text">
+                <h3>Sign Up For Newsletter</h3>
+                <p>Get latest updates about our shop and <span>special offers</span>.</p>
+            </div>
+            <form>
+                <input type="email" name="" placeholder="Your email address">
+                <button type="submit" class="normal">Sign Up</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="section-p1">
+        <div class="flex-center">
+            <div class="col">
+                <img src="./assets/img/logo.png" alt="">
+                <h3>Contact</h3>
+                <address>
+                    <p><span>Address:</span> 562 Welington Road, Street 32, San Francisco</p>
+                    <p><span>Phone:</span> +01 2222 365 (+91) 01 2345 6789</p>
+                    <p><span>Hours:</span> 10:00 - 18:00, Mon - Sat</p>
+                </address>
+                <h3>Follow Us</h3>
+                <div class="socia-icons">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-pinterest-p"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col">
+                <h3>About</h3>
+                <div class="footer-links">
+                    <a href="">About Us</a>
+                    <a href="">Delivery Information</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms and Conditions</a>
+                    <a href="">Contact Us</a>
+                </div>
+            </div>
+            <div class="col">
+                <h3>My Account</h3>
+                <div class="footer-links">
+                    <a href="">Sign In</a>
+                    <a href="">View Cart</a>
+                    <a href="">My Wishlist</a>
+                    <a href="">Track My Order</a>
+                    <a href="">Help</a>
+                </div>
+            </div>
+            <div class="install-app">
+                <h3>Install App</h3>
+                <p>From App Store or Google Play</p>
+                <a href=""><img src="./assets/img/pay/app.jpg" alt=""></a>
+                <a href=""><img src="./assets/img/pay/play.jpg" alt=""></a>
+                <p>Secured Payment Gateway</p>
+                <img src="./assets/img/pay/pay.png" alt="">
+            </div>
+        </div>
+        <div class="install-app-mobile">
+            <div class="install-app">
+                <h3>Install App</h3>
+                <p>From App Store or Google Play</p>
+                <a href=""><img src="./assets/img/pay/app.jpg" alt=""></a>
+                <a href=""><img src="./assets/img/pay/play.jpg" alt=""></a>
+                <p>Secured Payment Gateway</p>
+                <img src="./assets/img/pay/pay.png" alt="">
+            </div>
+        </div>
+        <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> 2023 | Kishan Salvi </p>
+    </footer>
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

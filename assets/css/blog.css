@@ -1,0 +1,88 @@
+#blog-hero {
+    background: url(../img/banner/b19.jpg);
+    width: 100%;
+    height: 40vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#blog-hero h2,
+#blog-hero p {
+    color: white;
+}
+
+.blog {
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 70px 0 80px 0;
+}
+
+.blog .blog-image {
+    width: 35%;
+    position: relative;
+}
+
+.blog .blog-image span {
+    font-size: 55px;
+    font-weight: 800;
+    color: #bcbabd;
+
+    position: absolute;
+    top: -14%;
+    z-index: -1;
+}
+
+.blog .blog-image img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.blog .blog-description {
+    width: 40%;
+}
+
+.blog .blog-description h4 {
+    margin-bottom: 30px;
+}
+
+.blog .blog-description p {
+    color: #1a1a1a;
+    line-height: 20px;
+}
+
+.blog .blog-description a {
+    color: #1a1a1a;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+
+    position: relative;
+    transition: .3s;
+}
+
+.blog .blog-description a:hover {
+    color: #088178;
+}
+
+.blog .blog-description a::after {
+    content: '';
+    width: 40px;
+    height: 2px;
+    background: #000;
+
+    position: absolute;
+    top: 40%;
+    margin-left: 10px;
+}
+
+.blog .blog-description a:hover::after {
+    background: #088178;
+}

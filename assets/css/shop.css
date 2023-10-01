@@ -1,0 +1,27 @@
+/* Hero */
+#shop-hero {
+    background: url(../img/banner/b1.jpg);
+    width: 100%;
+    height: 40vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#shop-hero h2,#shop-hero p {
+    color: white;
+}
+
+/* Pagination */
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+    text-decoration: none;
+    background: #088178;
+    color: white;
+    padding: 10px 15px;
+}

@@ -1,0 +1,116 @@
+#contact-hero {
+    background: url(../img/about/banner.png);
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact-hero h2,
+#contact-hero p {
+    color: white;
+}
+
+#contact .contact-info span,
+#contact-form .form span {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#contact .contact-info h4,
+#contact-form .form h4 {
+    margin: 30px 0;
+    color: #1a1a1a;
+    font-size: 28px;
+    width: 80%;
+}
+
+#contact .contact-info h6 {
+    color: #343434;
+    margin: 0 0 18px 0;
+    font-size: 14px;
+}
+
+#contact li {
+    list-style: none;
+}
+
+#contact li p {
+    display: inline-block;
+    color: #1a1a1a;
+    font-size: 14px;
+    margin: 0 0 18px 8px;
+}
+
+#contact-form {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    margin: 40px;
+    padding: 30px;
+    border: 1px solid #838383;
+}
+
+#contact-form .form {
+    width: 60%;
+}
+
+#contact-form .form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form .form form input,
+#contact-form .form form textarea {
+    max-width: 100%;
+    padding: 10px 8px;
+    border: 1px solid #bcbabd;
+    margin-bottom: 20px;
+
+    outline: none;
+}
+
+#contact-form .form button {
+    background: #088178;
+    color: white;
+    width: 200px;
+}
+
+#contact-form .people-cards {
+    /* background: #000; */
+    margin: auto;
+    padding: 0 25px;
+}
+
+#contact-form .people-cards .card {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+#contact-form .people-cards .card img {
+    width: 22%;
+    height: 22%;
+}
+
+#contact-form .people-cards .card .details {
+    color: black;
+}
+
+#contact-form .people-cards .card .details h5 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+#contact-form .people-cards .card .details p {
+    color: black;
+    margin: 0 0 5px 0;
+    font-size: 13px;
+}
