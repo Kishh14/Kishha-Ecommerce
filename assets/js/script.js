@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     closeButton.addEventListener("click", () => {
-      navMenu.style.right = "-30%";
+      navMenu.style.right = "-50%";
       setTimeout(() => {
         navigation.style.overflow = "hidden";
       }, headerTransitionDelay);

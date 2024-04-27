@@ -85,3 +85,9 @@
 #featured-products h2 {
     font-size: 34px;
 }
+
+@media screen and (max-width: 450px) {
+    #newsletter form input {
+        width: 55% !important;
+    }
+}

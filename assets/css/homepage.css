@@ -212,8 +212,6 @@ header #hero button {
 
 .product .img-con {
     border-radius: 15px;
-    /* position: relative; */
-    /* z-index: -1; */
 
     overflow: hidden;
 }
@@ -436,7 +434,7 @@ header #hero button {
 
     #mobile-menu a {
         text-decoration: none;
-        margin-right: 9px;
+        margin-right: 20px;
     }
 
     #mobile-menu a i {
@@ -448,14 +446,14 @@ header #hero button {
         flex-direction: column;
         background: #e3e6f3;
         box-shadow: 1px 0 17px 4px #00000059;
-        width: 30%;
+        width: 50%;
         height: 100vh;
         padding: 90px 20px 0 35px;
         transition: .5s;
 
         position: absolute;
         top: 0;
-        right: -30%;
+        right: -50%;
         z-index: 99;
     }
 
@@ -463,7 +461,8 @@ header #hero button {
         display: none;
     }
 
-    header nav li a.active::after, header nav li a:hover::after {
+    header nav li a.active::after,
+    header nav li a:hover::after {
         content: "";
         width: 15%;
         height: 2px;
@@ -521,12 +520,6 @@ header #hero button {
         font-size: 13px;
     }
 
-    #newsletter {
-        height: 19vh;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
     footer .install-app {
         display: none;
     }
@@ -537,6 +530,22 @@ header #hero button {
 }
 
 @media screen and (max-width: 477px) {
+    .logo img {
+        width: 60px !important;
+    }
+
+    #mobile-menu a {
+        margin-right: 20px !important;
+    }
+
+    header #hero {
+        height: 33vh !important;
+    }
+
+    header #hero p {
+        font-size: 9px !important;
+    }
+
     .section-p1 {
         padding: 15px;
     }
@@ -563,18 +572,22 @@ header #hero button {
     }
 
     header #hero p {
-        margin-bottom: 5px;
+        margin-bottom: 9px;
         margin-top: 12px;
         font-size: 9px;
     }
 
     h2 {
-        font-size: 20px !important;
+        font-size: 18px !important;
     }
 
     h1 {
-        font-size: 24px !important;
+        font-size: 21px !important;
         line-height: 10px !important;
+    }
+
+    header #hero button {
+        padding: 8px 22px !important;
     }
 
     #banner {
@@ -582,13 +595,21 @@ header #hero button {
     }
 
     #banner h3 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     /* Features */
     #features .features-box {
-        width: 160px;
+        width: 140px;
         padding: 16px 0px;
+    }
+
+    .features-box img {
+        width: 80% !important;
+    }
+
+    .features-box h6 {
+        font-size: 10px;
     }
 
     #features {
@@ -602,6 +623,30 @@ header #hero button {
         padding: 10px 9px;
     }
 
+    .product h4 {
+        font-size: 12px;
+    }
+
+    .product .description h5 {
+        font-size: 10px;
+    }
+
+    .product .description span {
+        font-size: 9px;
+    }
+
+    .product .description .star i {
+        font-size: 7px;
+    }
+
+    .flex-center {
+        flex-direction: row !important;
+    }
+
+    .product .cart {
+        font-size: 13px;
+    }
+
     /* Sell Banner */
     #sellBanner-container-2 {
         flex-wrap: wrap;
@@ -609,11 +654,36 @@ header #hero button {
 
     /* Newsletter */
     #newsletter {
-        height: 25vh;
+        height: 23vh !important;
+        padding: 22px !important;
     }
 
     /* Footer */
     footer .flex-center {
-        flex-direction: column;
+        flex-direction: column !important;
+    }
+
+    footer .flex-center .col img {
+        width: 35%;
+        display: block;
+        margin: auto;
+    }
+
+    footer h3 {
+        font-size: 16px;
+    }
+
+    footer address p {
+        font-size: 13px !important;
+    }
+
+    footer .socia-icons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    footer .footer-links a {
+        font-size: 13px !important;
     }
 }
