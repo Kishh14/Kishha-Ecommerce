@@ -538,6 +538,11 @@ header #hero button {
         margin-right: 20px !important;
     }
 
+    #mobile-menu i,
+    header nav ul .close-button{
+        cursor: pointer;
+    }
+
     header #hero {
         height: 33vh !important;
     }

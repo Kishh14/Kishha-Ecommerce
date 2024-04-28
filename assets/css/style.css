@@ -438,7 +438,7 @@ footer .copyright {
     height: 25vh;
   }
 
-  .flex-center {
+  #contact .flex-center {
     flex-direction: column !important;
   }
 
